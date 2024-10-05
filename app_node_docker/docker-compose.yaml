@@ -1,0 +1,11 @@
+version: '1'
+services:
+  my-app:
+    build: .
+    #image: docker-hub-user/image-name:image-tag
+    container_name: node-my-app
+    ports:
+     - 3000:3000
+    environment:
+      - MY_VARIABLE="Este es un mensaje desde el contenedor de la app"
+    
